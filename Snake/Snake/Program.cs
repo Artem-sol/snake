@@ -31,9 +31,15 @@ namespace Snake
             Console.WriteLine(sym);
         }*/
 
-            Point p1 = new Point(5,5,'$');
+            Point p1 = new Point();
+            p1.x = 5;
+            p1.y = 5;
+            p1.sym = '&';
 
-            Point p2 = new Point(10,10,'%');
+            Point p2 = new Point();
+            p2.x = 10;
+            p2.y = 10;
+            p2.sym = '#';
 
             p1.Draw();
             p2.Draw();
