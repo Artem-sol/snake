@@ -38,25 +38,10 @@ namespace Snake
             p1.Draw();
             p2.Draw();
 
-            List<int> numList = new List<int>();
-            numList.Add(0);
-            numList.Add(1);
-            numList.Add(2);
-
-            int x = numList[0];
-            int y = numList[1];
-            int z = numList[2];
-
-            foreach(int i in numList)
-            {
-                Console.WriteLine(i);
-            }
-
-            numList.RemoveAt(2);
-
-            List<Point> pList = new List<Point>();
-            pList.Add(p1);
-            pList.Add(p2);
+            HorizontalLine hLine = new HorizontalLine(5, 10, 8, '+');
+            VericalLine vLine = new VericalLine(5, 5, 15, '+');
+            hLine.pDraw();
+            vLine.pDraw();
 
             Console.ReadKey();
         }
